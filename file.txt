@@ -1,1 +1,38 @@
-hello
+Qno 1. How we can use ssh in github and also write command to generate ssh keys in your respestive operating system.
+
+ans- Secure Shell (SSH) Protocol facilitates the communication among systems in an unsecured network by providing a secure channel over it. It safeguards the connection to remote servers enabling user authentication.
+There are the steps to generate ssh keys in your respestive operating system
+Step 1: Generate SSH Key on Local System
+
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ 
+Step 2: Add SSH Key to SSH Agent
+	•	Initiate ssh-agent: $ eval "$(ssh-agent -s)" 
+	•	If your key is generated with a different name, replace id_rsa in the command below: $ ssh-add ~/.ssh/id_rsa 
+	•	
+Step 3: Add the SSH Key to your GitHub Account
+
+Copy key to the clipboard:
+$ pbcopy < ~/.ssh/id_rsa.pub
+
+Step 4: Test the SSH Connection
+	•	Launch Terminal / Git Bash.
+	•	Type: $ ssh -T git@github.com
+
+Qno 2.Write all commands from initialising to pushing your repo to github.
+
+create a folder named assignment1 and write your answer in txt file and push your answer to github repo.
+
+ans- step1	Run git init in the terminal. This will initialize the folder/repository that you have on your local computer system.
+	step2	Run git add . in the terminal. 
+	step3	Run git commit -m"insert Message here".
+	step4	Run git remote -v.
+	step5	Run git push origin master.
+
+Qno 4.Difference between static and dynamic website.
+ 
+ans- A static website is a website that has fixed content usually written in HTML. It is a basic kind of website and does not have custom coding and dynamic features.
+  It only requires client-side languages such as HTML and CSS to build the website. HTML stands for Hypertext Markup Language. 
+
+A dynamic website is a website whose content changes according to the user’s request. It is not just to read. Instead, it provides more user interaction and functionalities.
+ These websites use client-side languages such as HTML and CSS as well as server-side scripting languages such as ASP.NET, PHP, Java Server Pages (JSP), and Python to develop the pages.
